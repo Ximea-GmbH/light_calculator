@@ -82,7 +82,7 @@ light_calculator/
 ## 🌐 Online Deployment
 
 ### **🚀 Option 1: Binder (Free, One-Click Launch)**
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/USERNAME/light_calculator/main?urlpath=voila%2Frender%2Flight_calculator_dashboard.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ximea-gmbh/light_calculator/main?urlpath=voila%2Frender%2Flight_calculator_dashboard.ipynb)
 
 **How to use:**
 1. Click the Binder badge above
@@ -97,7 +97,7 @@ light_calculator/
 
 ### **🏠 Option 2: Local Installation (Best Performance)**
 ```bash
-git clone https://github.com/USERNAME/light_calculator.git
+git clone https://github.com/ximea-gmbh/light_calculator.git
 cd light_calculator
 python3 -m venv venv
 source venv/bin/activate

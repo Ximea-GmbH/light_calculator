@@ -38,3 +38,6 @@ MANIFEST
 # OS
 .DS_Store
 Thumbs.db
+
+# Project-specific
+CLAUDE.md
