@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Binder post-build script for Light Calculator Dashboard
+# This script runs after the environment is built but before the server starts
+
+echo "🔧 Configuring Jupyter widgets for Binder deployment..."
+
+# Enable ipywidgets extension for Jupyter
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+
+# Enable Voilà extension 
+jupyter serverextension enable voila --sys-prefix
+
+# Ensure matplotlib backend works in headless environment
+echo "🎨 Configuring matplotlib for web deployment..."
+python -c "import matplotlib; matplotlib.use('Agg')"
+
+# Test that our calculator module loads correctly
+echo "🧮 Testing Light Calculator module..."
+python -c "
+try:
+    from light_calculator import calculate_full_chain
+    print('✅ Light Calculator module loads successfully')
+except Exception as e:
+    print(f'❌ Error loading Light Calculator: {e}')
+    exit(1)
+"
+
+echo "✅ Binder environment setup complete!"
+echo "🚀 Light Calculator Dashboard is ready to launch"

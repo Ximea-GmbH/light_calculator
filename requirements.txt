@@ -1,0 +1,18 @@
+# Light Calculator Dashboard Requirements
+# Pinned versions for reproducible Binder deployments
+
+# Core dashboard dependencies
+voila==0.5.6
+ipywidgets==8.1.1
+notebook==7.0.6
+jupyter==1.0.0
+
+# Visualization and computation
+matplotlib==3.8.2
+numpy==1.26.2
+
+# Development/testing (optional)
+pytest==7.4.3
+
+# Note: This project provides a clean web dashboard interface
+# Pinned to specific versions for reliable Binder deployment
